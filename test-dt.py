@@ -11,7 +11,9 @@ import pandas as pd
 import os
 
 import dagshub
-dagshub.init(repo_name='sikander-riaz',repo_name='dvc-dagshub ',mlflow=True)
+
+
+dagshub.init(repo_owner="sikander-riaz", repo_name="dvc-dagshub", mlflow=True)
 mlflow.set_tracking_uri("https://dagshub.com/s21binft1e02032/dvc-dagshub.mlflow")
 
 # Create directory for artifacts if it doesn't exist
